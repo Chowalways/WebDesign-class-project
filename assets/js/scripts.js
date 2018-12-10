@@ -30,7 +30,8 @@ jQuery(document).ready(function() {
         Background slideshow
     */
     $('.top-content').backstretch("assets/img/backgrounds/taiwansky.jpg");
-    $('.activities').backstretch("assets/img/backgrounds/paiwanactivity.jpg");
+	$('.activities').backstretch("assets/img/backgrounds/paiwanactivity.jpg");
+	$('.history').backstretch("assets/img/backgrounds/100_0096.jpg");
    
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$('.top-content').backstretch("resize");
@@ -50,3 +51,10 @@ jQuery(document).ready(function() {
 function openTradition(){
 	location.href="traditional.html";
 }
+
+function openLocation(){
+	location.href="topography.html";
+}
+
+
+
