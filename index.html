@@ -1,41 +1,217 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome | Home Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./style/style.css" />
-    
-</head>
-<body>
-    <div class="menu-container">
-    <header>
-        <nav>
-        <ul>
-            <li> <a class="active" href="index.html">Home</a> </li>
-            <li> <a href="history.html">History</a> </li>
-            <li> <a href="topography.html">Topography</a> </li>
-            <li> <a href="events.html">Events</a> </li>
-            <li> <a href="about.html">About</a> </li>
-        </ul>
-    </nav>
-    </header>
-</div>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<div class="slider-container">
-    <div class="slider">
-        <img class="homeSlide" src="./images/slider images/aboriginal-art.jpg">
-        <img class="homeSlide" src="./images/slider images/boomerang.png">
-        <img class="homeSlide" src="./images/slider images/canada920.jpg">
-        <img class="homeSlide" src="./images/slider images/did.jpg">
-        <img class="homeSlide" src="./images/slider images/rain.jpg">
-        <img class="homeSlide" src="./images/slider images/teepee.jpg">
+    <title>Know PaiWan | Home</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+    
+  </head>
+
+  <body>
+    <!-- menu -->
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Know PaiWan | 認識排灣族</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#top-content">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#tradition">傳統文化</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#activities">活動日曆表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scroll-link" href="#area">活動舉辦位置</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Top content -->
+    <div class="top-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text">
+            <h1 class="wow fadeInLeftBig">
+              Home of the PaiWan People <br />排灣族之家
+            </h1>
+            <div class="description wow fadeInLeftBig">
+              <p>
+                隨著網路科技越來越發達，身為資工人，都希望能運用所學之專業技術，來架設網站宣傳更多弱勢的族群。除了可以幫助其他人更加認識原住民族---
+                ”排灣族”，還能瞭解他們的歷史故事，讓大家都能看見他們特有的文化和特色的傳統活動
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="slider.js"></script>
-</div>
+    <!-- Traditional services -->
+    <div class="tradition-container section-container">
+      <div class="container">
+        <div class="row">
+          <div class="col tradition section-description wow fadeIn">
+            <h2>傳統文化</h2>
+            <div class="divider-1 wow fadeInUp"><span></span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 tradition-box wow fadeInUp">
+            <div class="row">
+              <div class="container">
+				        <img  src="assets/img/backgrounds/paiwan_23.jpg" class="rounded-circle">
+			        </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 services-box wow fadeInDown">
+            <div class="row">
+              <div class="col">
+                <!--TODO ADD TRADITIONAL LINK TO HREF-->
+                <button onclick="openTradition()" type="button" class="btn btn-warning">See More</button>
+                <p>
+                  Here you can find information about the Traditional culture of the PaiWan people.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 services-box wow fadeInUp">
+              <div class="row">
+                <div class="container">
+                  <img src="assets/img/backgrounds/bracelet.jpg" class="rounded-circle">
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Activities -->
+    <div class="activities-container section-container">
+      <div class="container">
+        <div class="row">
+          <div class="col more-services section-description wow fadeIn">
+            <h2>活動日曆表</h2>
+            <div class="divider-1 wow fadeInUp"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col wow fadeInLeftBig">
+          <p>
+            Here you will find Information regarding upcoming activities.
+          </p>
+        </div>
+    </div>
+
+    <div
+      class="activities section-container section-container-image-bg"
+    >
+      <div class="container">
+        
+        <div class="row">
+          <div class="col section-bottom-button wow fadeInUp">
+            <button href="#" type="button" class="btn btn-warning">Activities</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Activity Areas -->
+    <div class="area-container section-container">
+      <div class="container">
+        <div class="row">
+          <div class="col portfolio section-description wow fadeIn">
+            <h2>Where We Are</h2>
+            <div class="divider-1 wow fadeInUp"><span></span></div>
+            <p>
+             Know about our land and about us through where we  live
+            </p>
+          </div>
+        </div>
+        <div class="row wow fadeInUp">
+          <div class="container">
+              <img src="assets/img/places/paiwanTaiwan.png">
+              <img src="assets/img/places/pTaiwan.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col section-bottom-button wow fadeInUp">
+            <button type="button" class="btn btn-warning">Take me there</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 
 
-</body>
+    <!-- Javascript -->
+    
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
 </html>
